@@ -1,0 +1,22 @@
+.logo {
+  outline: 2px dashed deeppink;
+  font-family: "Playfair Display Regular", serif;
+  color: #f1cdb3;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: normal;
+  text-align: left;
+
+  @include indent();
+
+  & a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & span {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1;
+  }
+}

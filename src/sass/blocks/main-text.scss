@@ -1,0 +1,6 @@
+.main-text {
+  color: #cdcdcd;
+
+  @include indent();
+  padding: 0.5em;
+}

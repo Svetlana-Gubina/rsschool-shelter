@@ -1,0 +1,7 @@
+.page-block {
+  @include indent();
+  width: 100%;
+  max-width: 100%;
+
+  @include flex();
+}

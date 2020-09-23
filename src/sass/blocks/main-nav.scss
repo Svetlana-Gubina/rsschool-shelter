@@ -1,0 +1,40 @@
+.main-nav__list {
+  @include list();
+  @include indent();
+  @include flex();
+}
+
+.main-nav__item {
+  @include indent();
+}
+
+.main-nav__link {
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #cdcdcd;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.main-nav__link--active {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    width: 80%;
+    height: 1px;
+    background: #f1cdb3;
+    border-radius: 1.5px;
+  }
+}

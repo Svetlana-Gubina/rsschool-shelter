@@ -1,11 +1,10 @@
 .wrapper {
   width: 100%;
+  max-width: 100%;
   min-width: $mobile-width;
   height: auto;
+
   @include indent();
-
-  @include media-tablet {
-    // width: 500px;
-  }
+  margin-right: auto;
+  margin-left: auto;
 }
-
