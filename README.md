@@ -1,2 +1,3 @@
-# gulp
-Сборка gulp
+# Shelter
+
+Hometask: shelter. Main page
