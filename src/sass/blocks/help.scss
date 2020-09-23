@@ -1,0 +1,50 @@
+.help {
+  outline: 2px dashed darkolivegreen;
+  align-items: center;
+  flex-direction: column;
+}
+
+.help__heading {
+  @include indent();
+  padding: 0.2em;
+  margin-bottom: 20px;
+  // max-width: 40%;
+  text-align: center;
+}
+
+.help__list {
+  @include indent();
+  @include list();
+  @include flex();
+  justify-content: center;
+  align-items: center;
+}
+
+.help__item {
+  @include indent();
+  outline: 2px dashed deeppink;
+  flex-basis: 165px;
+  margin: 20px;
+}
+
+.help__link {
+  outline: 2px dashed darkblue;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  font-family: "Playfair Display Regular", serif;
+  font-size: 20px;
+  line-height: 1.15;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

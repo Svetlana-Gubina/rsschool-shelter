@@ -236,54 +236,115 @@
         </section>
       </div>
       <main>
-        <section>
-          <h2>About the shelter “Cozy House”</h2>
-          <p>
-            On our hands 121 dogs and 342 cats, and statistics shows that only
-            20% of them will find family. The others will continue to live with
-            us and will be waiting for lucky chance to become beloved.
-          </p>
-          <p>
-            We feed our wards with the best food and make sure that they do not
-            get sick, feel comfortable (including psychologically) and well. We
-            are supported by 87 volunteers and 28 employees of various skill
-            levels. About 12% of the animals are taken by shelter staff. Taking
-            care of animals, they become attached to the pets and couldn’t leave
-            them alone.
-          </p>
-        </section>
-        <section>
-          <h2>Our friends who are looking for a house</h2>
-          <div class="slider">
-            <ul>
-              <li><a href="#">Back</a></li>
-              <li><a href="#">Forward</a></li>
-            </ul>
-            <ul>
-              <li>
-                <img src="assets/img/1.jpg" alt="" />
-                <p>Katrine</p>
-                <a href="#">Learn more</a>
-              </li>
-              <li>
-                <img src="assets/img/1.jpg" alt="" />
-                <p>Jennifer</p>
-                <a href="#">Learn more</a>
-              </li>
-              <li>
-                <img src="assets/img/1.jpg" alt="" />
-                <p>Woody</p>
-                <a href="#">Learn more</a>
-              </li>
-            </ul>
+        <section class="about page-block">
+          <div class="about__flex">
+            <img
+              class="about__img"
+              src="assets/img/about-pets.png"
+              alt="Retriever dog and cat"
+            />
+            <div class="about__flex--inner">
+              <h2 class="about__heading main-heading">
+                About the shelter “Cozy House”
+              </h2>
+              <p class="about__text main-text">
+                On our hands 121 dogs and 342 cats, and statistics shows that
+                only 20% of them will find family. The others will continue to
+                live with us and will be waiting for lucky chance to become
+                beloved.
+              </p>
+              <p class="about__text main-text">
+                We feed our wards with the best food and make sure that they do
+                not get sick, feel comfortable (including psychologically) and
+                well. We are supported by 87 volunteers and 28 employees of
+                various skill levels. About 12% of the animals are taken by
+                shelter staff. Taking care of animals, they become attached to
+                the pets and couldn’t leave them alone.
+              </p>
+            </div>
           </div>
-          <a href="#">Get to know the rest</a>
         </section>
-        <section>
-          <h2>Than you can help our shelter</h2>
-          <ul>
-            <li>
-              <a href="#"
+        <section class="friends page-block">
+          <div class="friends__flex">
+            <h2 class="friends__heading main-heading">
+              Our friends who <br />
+              are looking for a house
+            </h2>
+            <div class="slider">
+              <!--<ul class="slider__nav">
+                <li><a href="#">Back</a></li>
+                <li><a href="#">Forward</a></li>
+              </ul>-->
+              <a class="slider__navlink slider__navlink--back" href="#"
+                >Slider navigation back
+                <svg
+                  width="14"
+                  height="6"
+                  viewBox="0 0 14 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#444444" />
+                </svg>
+              </a>
+              <a class="slider__navlink slider__navlink--forward" href="#"
+                >Slider navigation forward
+                <svg
+                  width="14"
+                  height="6"
+                  viewBox="0 0 14 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#444444" />
+                </svg>
+              </a>
+              <ul class="slider__list">
+                <li class="slider__item">
+                  <img
+                    class="slider__img"
+                    src="assets/img/pets-katrine.png"
+                    alt="Cat Katrine"
+                    width="132.11"
+                    height="240"
+                  />
+                  <p class="slider__name">Katrine</p>
+                  <a class="main-btn slider__item-btn" href="#">Learn more</a>
+                </li>
+                <li class="slider__item">
+                  <img
+                    class="slider__img"
+                    src="assets/img/pets-jennifer.png"
+                    alt="Puppy Jennifer"
+                    width="132.11"
+                    height="240"
+                  />
+                  <p class="slider__name">Jennifer</p>
+                  <a class="main-btn slider__item-btn" href="#">Learn more</a>
+                </li>
+                <li class="slider__item">
+                  <img
+                    class="slider__img"
+                    src="assets/img/pets-woody.png"
+                    alt="Dog Woody"
+                    width="132.11"
+                    height="240"
+                  />
+                  <p class="slider__name">Woody</p>
+                  <a class="main-btn slider__item-btn" href="#">Learn more</a>
+                </li>
+              </ul>
+            </div>
+            <a class="friends__link main-btn" href="#">Get to know the rest</a>
+          </div>
+        </section>
+        <section class="help page-block">
+          <h2 class="help__heading main-heading">
+            Than you can help our shelter
+          </h2>
+          <ul class="help__list">
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -298,8 +359,8 @@
                 <p>Pet food</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="61"
@@ -314,8 +375,8 @@
                 <p>Transportation</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -330,8 +391,8 @@
                 <p>Toys</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -346,8 +407,8 @@
                 <p>Bowls and cups</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -362,8 +423,8 @@
                 <p>Shampoos</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -378,8 +439,8 @@
                 <p>Vitamins</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -394,8 +455,8 @@
                 <p>Medicines</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -410,8 +471,8 @@
                 <p>Collars / leashes</p></a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="help__item">
+              <a class="help__link" href="#"
                 ><i
                   ><svg
                     width="60"
@@ -428,16 +489,25 @@
             </li>
           </ul>
         </section>
-        <section>
-          <h2>In addition, you can make a donation</h2>
-          <p>Name of the bank / Type of bank account</p>
-          <a href="#">8380 2880 8028 8791 7435</a>
-          <p>
-            Legal information and lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
-            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
-            malesuada fames ac ante ipsum primis in faucibus.
-          </p>
+        <section class="donation page-block">
+          <img
+            class="donation__img"
+            src="assets/img/donation-dog.png"
+            alt="Lying ginger puppy"
+          />
+          <div class="donation__flex">
+            <h2 class="donation__heading main-heading">
+              In addition, you can make a donation
+            </h2>
+            <p>Name of the bank / Type of bank account</p>
+            <a href="#">8380 2880 8028 8791 7435</a>
+            <p class="donation__text main-text">
+              Legal information and lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
         </section>
       </main>
       <footer>

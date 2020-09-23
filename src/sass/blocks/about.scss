@@ -1,0 +1,29 @@
+.about {
+  outline: 2px dashed crimson;
+  align-items: center;
+  // padding: 4%;
+}
+
+.about__heading {
+  @include indent();
+  padding: 0.2em;
+  margin-bottom: 20px;
+}
+
+.about__flex {
+  @include flex();
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about__flex--inner {
+  @include flex();
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.about__img {
+  display: block;
+  margin-right: 120px;
+}

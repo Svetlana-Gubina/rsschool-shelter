@@ -1,0 +1,24 @@
+.donation {
+  outline: 2px dashed crimson;
+  align-items: center;
+}
+
+.donation__flex {
+  outline: 2px dashed crimson;
+  max-width: 25%;
+
+  @include flex();
+  flex-direction: column;
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+.donation__img {
+  outline: 2px dashed crimson;
+  display: block;
+  width: 26%;
+  object-fit: contain;
+  margin-left: auto;
+  // margin-right: 50px;
+}

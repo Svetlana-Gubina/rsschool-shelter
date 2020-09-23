@@ -1,0 +1,21 @@
+.friends {
+  outline: 2px dashed darkblue;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.friends__heading {
+  @include indent();
+  padding: 0.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.friends__flex {
+  @include flex();
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
