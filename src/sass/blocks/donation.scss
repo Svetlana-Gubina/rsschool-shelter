@@ -1,6 +1,7 @@
 .donation {
   outline: 2px dashed crimson;
   align-items: center;
+  background-color: #f6f6f6;
 }
 
 .donation__flex {
@@ -21,4 +22,43 @@
   object-fit: contain;
   margin-left: auto;
   // margin-right: 50px;
+}
+
+.donation__smaill-text {
+  font-family: "Playfair Display Regular", serif;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.donation__card-number {
+  max-width: 85%;
+
+  font-family: "Crimson-Roman", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: #292929;
+  text-decoration: none;
+  padding: 0.5em;
+  background: #f1cdb3;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  & svg {
+    margin-right: 20px;
+  }
 }
