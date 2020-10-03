@@ -14,3 +14,55 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin catalog-list() {
+  @include indent();
+  @include list();
+  @include flex();
+  justify-content: space-between;
+}
+
+@mixin catalog-item() {
+  @include indent();
+  padding: 2%;
+  width: 270px;
+  min-height: 424px;
+
+  @include flex();
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin catalog-img() {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 240px;
+  object-fit: contain;
+}
+
+@mixin catalog-name() {
+  @include indent();
+  padding: 0.5em;
+  font-family: "Playfair Display Regular", serif;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+
+@mixin catalog-btn() {
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+  padding: 0.5em 1em;
+
+  &:hover,
+  &:focus {
+    background-color: #f1cdb3;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,14 @@
+.page-main {
+  @include indent();
+  width: 100%;
+  max-width: 100%;
+
+  @include flex();
+}
+
+.page-main--inner {
+  padding: 4%;
+  background-color: #f6f6f6;
+
+  // @include flex();
+}
