@@ -1,11 +1,11 @@
-@mixin media-tablet {
-  @media screen and (min-width: $tablet-width) {
+@mixin media-mobile {
+  @media screen and (max-width: $tablet-width) {
     @content;
   }
 }
 
-@mixin media-tablet-horizontal {
-  @media screen and (min-width: $tabletHorizontal) {
+@mixin media-tablet {
+  @media screen and (min-width: $tablet-width) {
     @content;
   }
 }

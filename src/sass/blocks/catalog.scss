@@ -4,7 +4,7 @@
   @include indent();
   @include flex();
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   width: 100%;
   max-width: 100%;
 }
@@ -12,31 +12,32 @@
 .catalog__heading {
   outline: 2px dashed red;
 
-  font-size: 35px;
-  line-height: 1.3;
+  // font-size: 35px;
+  font-size: 25px;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
   color: #545454;
 
   @include indent();
-  padding: 0.2em;
-  margin-bottom: 20px;
-
-  max-width: 25%;
+  margin-bottom: 49px;
+  padding-right: 7px;
+  width: 100%;
+  max-width: 100%;
+  // max-width: 25%;
 }
 
 .catalog__list {
   @include catalog-list();
+  flex-direction: column; // mobile
 }
 
 .catalog__item {
   outline: 2px dashed dodgerblue;
 
   @include catalog-item();
-  margin-right: 40px;
   margin-bottom: 40px;
-
-  min-width: 20%;
+  // padding: 11% 15%;
+  // min-width: 20%;
 }
 
 .catalog__item:nth-child(4n) {
@@ -58,7 +59,12 @@
 .catalog__nav-list {
   @include catalog-list();
   outline: 2px dashed dodgerblue;
-  min-width: 30%;
+  // min-width: 30%;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  // padding: 2px;
+  margin-bottom: 21px;
 }
 
 .catalog__nav-item {
@@ -66,19 +72,23 @@
 }
 
 .catalog__nav-link {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.15;
   letter-spacing: 0.06em;
   color: #292929;
-  display: block;
-  padding: 1em 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  // padding: 0.5em 0.7em;
   border-radius: 50%;
   border: 2px solid #f1cdb3;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    background-color: #f1cdb3;
   }
 
   &:active {
@@ -87,5 +97,18 @@
 }
 
 .catalog__nav-link--active {
-  background-color: #f1cdb3;
+  background-color: #fddcc4;
+}
+
+.catalog__nav-link--disabled {
+  opacity: 0.5;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.catalog__item--jennifer,
+.catalog__item--sophia,
+.catalog__item--charly,
+.catalog__item--scarlett,
+.catalog__item--freddie {
+  display: none;
 }
