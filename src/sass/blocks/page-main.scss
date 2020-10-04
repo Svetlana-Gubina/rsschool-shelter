@@ -9,7 +9,13 @@
 .page-main--inner {
   padding: 3.125%;
   padding-top: 12%;
+  padding-bottom: 1.5%;
   background-color: #f6f6f6;
 
-  // @include flex();
+  @include media-tablet() {
+    @include indent();
+    padding: 2.4% 3%;
+    padding-top: 6.5%;
+    padding-bottom: 6%;
+  }
 }

@@ -1,7 +1,7 @@
 "use strict";
 (function () {
   const BREAKPOINTS = {
-    tablet: "768px",
+    tablet: "600px",
   };
 
   const toggle = document.querySelector(".main-nav__toggle");
@@ -29,5 +29,3 @@
     menu.classList.toggle("visually-hidden");
   });
 })();
-
-console.log("WTF?");

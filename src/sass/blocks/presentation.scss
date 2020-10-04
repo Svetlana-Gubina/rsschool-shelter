@@ -1,26 +1,41 @@
-.presentation__flex {
-  max-width: 65%;
-
+.presentation {
   @include indent();
-  padding: 13% 20%;
+}
+
+.presentation__flex {
+  @include indent();
+  margin-top: 145px;
 
   @include flex();
   flex-direction: column;
+
+  @include media-tablet() {
+    max-width: 40%;
+  }
 }
 
 .presentation .presentation__heading {
   font-size: 44px;
   line-height: 1.3;
   color: #ffffff;
+  letter-spacing: 0.04em;
 
   @include indent();
-  padding: 0.2em;
+  padding: 0.2em 0;
+  margin-bottom: 25px;
+
+  @include media-tablet() {
+    max-width: 80%;
+  }
 }
 
 .presentation .presentation__text {
-  margin-bottom: 20px;
+  margin-bottom: 33px;
+  padding-right: 10px;
 }
 
 .presentation__link {
-  max-width: 45%;
+  @include media-custom(1200px) {
+    max-width: 45%;
+  }
 }

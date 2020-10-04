@@ -4,13 +4,18 @@
 
 .container--top {
   background-color: #312925;
-  background-image: url("../../assets/img/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 908px;
+
+  @include media-tablet() {
+    background-image: url("../../assets/img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .container--top {
-    background-image: url("../../assets/img/hero@2x.png");
+    // background-image: url("../../assets/img/hero@2x.png");
   }
 }
