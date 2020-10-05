@@ -1,7 +1,7 @@
 .about {
   align-items: center;
   padding-top: 6%;
-  padding-bottom: 6%;
+  padding-bottom: 7%;
 }
 
 .about__heading {
@@ -33,7 +33,7 @@
   }
 
   @include media-custom(1200px) {
-    max-width: 72%;
+    max-width: 71%;
   }
 }
 
