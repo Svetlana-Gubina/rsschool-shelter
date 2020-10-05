@@ -12,10 +12,19 @@
 
   min-height: 943px; // mobile
 
+  @include media-custom(400px) {
+    min-height: 600px;
+  }
+
+  @include media-custom(600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 354px;
+  }
+
   @include media-tablet() {
     padding-left: 2.5%;
-    flex-direction: row;
-    min-height: 354px;
+    justify-content: flex-start;
     background-image: url("../../assets/img/footer-bg.jpg");
     background-position: 50% 0;
   }
@@ -42,7 +51,16 @@
   @include indent();
   margin-bottom: 10px;
 
+  @include media-custom(600px) {
+    max-width: 45%;
+  }
+
   @include media-tablet() {
+    max-width: 35%;
+    margin-right: 40px;
+  }
+
+  @include media-desktop() {
     max-width: 25%;
     margin-right: 140px;
   }
@@ -68,7 +86,6 @@
 }
 
 .page-footer__link {
-  outline: 1px dashed yellow;
   font-family: "Crimson-Roman", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;

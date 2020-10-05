@@ -29,19 +29,21 @@ const gulp = require("gulp"),
 // HTML
 
 const html = () => {
-  return gulp
-    .src(dir.src + "*.html")
-    .pipe(posthtml([include()]))
-    .pipe(htmlValidator())
-    .pipe(htmlValidator.reporter())
-    .pipe(
-      htmlmin({
-        collapseWhitespace: true,
-        removeComments: true,
-      })
-    )
-    .pipe(gulp.dest(dir.build))
-    .pipe(sync.stream());
+  return (
+    gulp
+      .src(dir.src + "*.html")
+      .pipe(posthtml([include()]))
+      // .pipe(htmlValidator())
+      // .pipe(htmlValidator.reporter())
+      // .pipe(
+      //   htmlmin({
+      //     collapseWhitespace: true,
+      //     removeComments: true,
+      //   })
+      // )
+      .pipe(gulp.dest(dir.build))
+      .pipe(sync.stream())
+  );
 };
 
 exports.html = html;

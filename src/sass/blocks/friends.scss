@@ -1,21 +1,36 @@
 .friends {
-  outline: 2px dashed darkblue;
+  position: relative;
   align-items: center;
   background-color: #f6f6f6;
+
+  width: 100%;
+  max-width: 100%;
+
+  @include media-tablet() {
+    @include indent();
+    padding-top: 6%;
+    padding-bottom: 6%;
+  }
 }
 
 .friends__heading {
   @include indent();
   padding: 0.2em;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .friends__flex {
   @include flex();
   flex-direction: column;
   align-items: center;
-  max-width: 60%;
-  margin-right: auto;
-  margin-left: auto;
+
+  width: 100%;
+  max-width: 100%;
+}
+
+.friends__link {
+  min-width: 20%;
+  margin-bottom: 20px;
 }

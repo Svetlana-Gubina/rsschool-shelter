@@ -23,28 +23,24 @@
 
 @mixin catalog-item() {
   @include indent();
-  background-color: #fafafa;
   border-radius: 9px;
 
   @include flex();
   flex-direction: column;
-  align-items: center;
 
-  width: 270px;
+  max-width: 270px;
+  min-height: 435px;
 }
 
 @mixin catalog-img() {
-  outline: 4px dashed salmon;
   display: block;
-  // width: 100%;
-  width: 270px;
-  height: 270px;
-  object-fit: contain;
+  min-height: 270px;
 }
 
 @mixin catalog-name() {
   @include indent();
-  padding: 0.5em;
+  // margin-bottom: 20px;
+  // padding: 0.5em;
   font-family: "Playfair Display Regular", serif;
   font-size: 20px;
   line-height: 1.15;
