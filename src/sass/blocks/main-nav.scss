@@ -46,9 +46,6 @@
   }
 }
 
-.main-nav__link:last-of-type {
-  // padding-right: 0;
-}
 
 .main-nav__link--active {
   position: relative;
@@ -77,21 +74,6 @@
     opacity: 0.8;
   }
 }
-
-// .main-nav--inner .main-nav__link--active {
-//   position: relative;
-//
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 100%;
-//     left: 15%;
-//     width: 80%;
-//     height: 1px;
-//     background: #f1cdb3;
-//     border-radius: 1.5px;
-//   }
-// }
 
 .main-nav__toggle {
   font-size: 0;

@@ -35,13 +35,7 @@
 }
 
 .slider__item-link {
-  @include indent();
-  @include flex();
-  flex-direction: column;
-  align-items: center;
-  background-color: #fafafa;
-  text-decoration: none;
-  color: #545454;
+  @include catalog__item-link();
 
   &:hover .slider__item-bottom,
   &:focus .slider__item-bottom {
@@ -55,15 +49,7 @@
 
 
 .slider__item-bottom {
-  width: 100%;
-  max-width: 100%;
-
-  @include indent();
-  padding: 11% 14%;
-
-  @include flex();
-  flex-direction: column;
-  align-items: center;
+  @include catalog__item-bottom();
 }
 
 
@@ -123,5 +109,4 @@
 
 .slider .slider__item-btn {
   @include catalog-btn();
-
 }

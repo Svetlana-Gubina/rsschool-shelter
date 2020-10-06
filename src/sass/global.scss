@@ -2,11 +2,11 @@
   font-family: "Playfair Display";
   src: local("Playfair Display Regular"),
     url("../assets/fonts/Playfair_Display/PlayfairDisplay-Regular.woff2")
-      format("woff2"),
+    format("woff2"),
     url("../assets/fonts/Playfair_Display/PlayfairDisplay-Regular.woff")
-      format("woff"),
+    format("woff"),
     url("../assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf")
-      format("truetype");
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -15,9 +15,9 @@
 @font-face {
   font-family: "Crimson-Roman";
   src: local("Crimson-Roman"),
-    url("../assets/fonts/Crimson-Roman.woff2") format("woff2"),
-    url("../assets/fonts/Crimson-Roman.woff") format("woff"),
-    url("../assets/fonts//Crimson-Roman.ttf") format("truetype");
+    url("../assets/fonts/Crimson/Crimson-Roman.woff2") format("woff2"),
+    url("../assets/fonts/Crimson/Crimson-Roman.woff") format("woff"),
+    url("../assets/fonts/Crimson/Crimson-Roman.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }

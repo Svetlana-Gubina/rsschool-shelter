@@ -33,8 +33,8 @@ const html = () => {
     gulp
       .src(dir.src + "*.html")
       .pipe(posthtml([include()]))
-      // .pipe(htmlValidator())
-      // .pipe(htmlValidator.reporter())
+      .pipe(htmlValidator())
+      .pipe(htmlValidator.reporter())
       // .pipe(
       //   htmlmin({
       //     collapseWhitespace: true,
@@ -64,8 +64,8 @@ const styles = () => {
       ])
     )
     .pipe(postcss([autoprefixer()]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
+    // .pipe(csso())
+    // .pipe(rename("style.min.css"))
     .pipe(sourcemap.write())
     .pipe(gulp.dest(dir.build + "css/"))
     .pipe(sync.stream());
@@ -76,8 +76,8 @@ exports.styles = styles;
 const normalize = () => {
   return gulp
     .src(dir.src + "css/normalize.css")
-    .pipe(csso())
-    .pipe(rename("normalize.min.css"))
+    // .pipe(csso())
+    // .pipe(rename("normalize.min.css"))
     .pipe(gulp.dest(dir.build + "css/"))
     .pipe(sync.stream());
 };

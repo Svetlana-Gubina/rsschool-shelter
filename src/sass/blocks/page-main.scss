@@ -7,15 +7,30 @@
 }
 
 .page-main--inner {
-  padding: 3.125%;
-  padding-top: 12%;
-  padding-bottom: 1.5%;
+  @include indent();
+  padding-top: 128px;
   background-color: #f6f6f6;
 
+  @include media-custom(600px) {
+    padding-top: 400px;
+  }
+
   @include media-tablet() {
-    @include indent();
-    padding: 2.4% 3%;
-    padding-top: 6.5%;
-    padding-bottom: 6%;
+    padding-top: 128px;
+  }
+}
+
+.page-main--inner .wrapper {
+  padding: 3.125%;
+  padding-top: 10%;
+  padding-bottom: 1.5%;
+
+  @include media-tablet() {
+    padding: 2.4%;
+    padding-bottom: 4%;
+  }
+
+  @include media-desktop() {
+    padding-top: 4%;
   }
 }
