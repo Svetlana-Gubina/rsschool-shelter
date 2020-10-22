@@ -6,6 +6,13 @@
   background-color: #312925;
   min-height: 908px;
 
+  @include mobile-to-tablet {
+    min-height: 1170px;
+    background-image: url("../../assets/img/hero-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   @include media-tablet() {
     background-image: url("../../assets/img/hero.jpg");
     background-repeat: no-repeat;

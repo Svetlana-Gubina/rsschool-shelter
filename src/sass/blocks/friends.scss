@@ -22,15 +22,34 @@
 }
 
 .friends__flex {
+  // @include indent();
   @include flex();
   flex-direction: column;
   align-items: center;
 
   width: 100%;
   max-width: 100%;
+
+  @include mobile-to-tablet {
+    @include indent();
+    padding-top: 50px;
+  }
+
+  // @include media-tablet() {
+  // }
 }
 
 .friends__link {
   min-width: 20%;
   margin-bottom: 20px;
+
+  @include mobile-to-tablet {
+    min-width: 35%;
+    margin-bottom: 80px;
+  }
+
+  @include media-tablet() {
+    min-width: 20%;
+    margin-bottom: 20px;
+  }
 }

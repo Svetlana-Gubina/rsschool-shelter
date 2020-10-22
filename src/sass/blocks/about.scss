@@ -10,6 +10,10 @@
   letter-spacing: 0.1em;
   margin-bottom: 10px;
 
+  @include mobile-to-tablet {
+    max-width: 80%;
+  }
+
   @include media-custom(1200px) {
     max-width: 80%;
   }
@@ -27,7 +31,13 @@
   margin-right: auto;
   margin-left: auto;
 
+  @include mobile-to-tablet {
+    max-width: 64%;
+    padding-top: 20px;
+  }
+
   @include media-tablet() {
+    @include indent();
     flex-direction: row;
     justify-content: space-between;
   }
@@ -46,13 +56,25 @@
   @include flex();
   flex-direction: column;
 
+  @include mobile-to-tablet {
+    order: 1;
+    margin-bottom: 60px;
+  }
+
   @include media-tablet() {
+    order: 0;
     max-width: 50%;
   }
 }
 
 .about__text {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+}
+
+.about__text:first-of-type {
+  @include mobile-to-tablet {
+    margin-bottom: 10px;
+  }
 }
 
 .about__text:last-of-type {
@@ -63,7 +85,13 @@
   display: block;
   margin-bottom: 20px;
 
+  @include mobile-to-tablet {
+    order: 2;
+    margin-bottom: 50px;
+  }
+
   @include media-tablet() {
+    order: 0;
     margin-bottom: 0;
   }
 }

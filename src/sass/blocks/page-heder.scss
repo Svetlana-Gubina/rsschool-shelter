@@ -1,4 +1,4 @@
-.page-heder {
+.page-header {
   width: 100%;
   max-width: 100%;
   min-width: $mobile-width;
@@ -9,17 +9,25 @@
   @include flex();
   justify-content: space-between;
 
+  @include mobile-to-tablet {
+    padding: 1%;
+  }
+
   @include media-tablet() {
     padding: 2.4% 3%;
     padding-right: 2%;
   }
 }
 
-.page-heder--index {
+.page-header--index {
   padding-top: 60px;
+
+  @include mobile-to-tablet {
+    padding-top: 30px;
+  }
 }
 
-.page-heder--inner {
+.page-header--inner {
   @include indent();
   position: fixed;
   top: 0;
@@ -33,7 +41,7 @@
   }
 }
 
-.page-heder--inner .wrapper {
+.page-header--inner .wrapper {
   @include indent();
   padding: 9.375% 3.125%;
 

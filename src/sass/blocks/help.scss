@@ -1,6 +1,16 @@
 .help {
+  // @include indent();
   align-items: center;
   flex-direction: column;
+
+  @include mobile-to-tablet {
+    @include indent();
+    padding-top: 75px;
+  }
+
+  @include media-tablet() {
+    // @include indent();
+  }
 }
 
 .help__heading {
@@ -9,6 +19,17 @@
   margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.1em;
+
+  @include mobile-to-tablet {
+    margin-bottom: 25px;
+    max-width: 50%;
+  }
+
+  @include media-tablet() {
+    margin-bottom: 20px;
+    max-width: 30%;
+    margin-top: 40px;
+  }
 
   @include media-desktop() {
     max-width: 30%;
@@ -23,6 +44,17 @@
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+
+  @include mobile-to-tablet {
+    justify-content: flex-start;
+    padding-left: 50px;
+    margin-bottom: 55px;
+  }
+
+  @include media-tablet() {
+    @include indent();
+    padding-top: 30px;
+  }
 
   @include media-desktop() {
     justify-content: flex-start;

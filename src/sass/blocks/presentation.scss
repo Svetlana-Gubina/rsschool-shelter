@@ -1,5 +1,9 @@
 .presentation {
   @include indent();
+
+  @include mobile-to-tablet {
+    @include flex();
+  }
 }
 
 .presentation__flex {
@@ -8,6 +12,13 @@
 
   @include flex();
   flex-direction: column;
+
+  @include mobile-to-tablet {
+    // background-color: darkolivegreen;
+    margin-top: 25px;
+    margin-left: 16%;
+    max-width: 66%;
+  }
 
   @include media-tablet() {
     max-width: 40%;
@@ -25,6 +36,10 @@
   padding: 0.2em 0;
   margin-bottom: 25px;
 
+  @include mobile-to-tablet {
+    max-width: 80%;
+  }
+
   @include media-tablet() {
     max-width: 80%;
   }
@@ -36,7 +51,14 @@
 }
 
 .presentation__link {
+  @include mobile-to-tablet {
+    min-width: 45%;
+    max-width: 45%;
+    align-self: center;
+  }
+
   @include media-custom(1200px) {
+    min-width: 45%;
     max-width: 45%;
   }
 }
