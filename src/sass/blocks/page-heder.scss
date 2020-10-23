@@ -9,6 +9,11 @@
   @include flex();
   justify-content: space-between;
 
+  @include media-mobile() {
+    // background-color: red;
+    padding: 1%;
+  }
+
   @include mobile-to-tablet {
     padding: 1%;
   }
@@ -21,6 +26,11 @@
 
 .page-header--index {
   padding-top: 60px;
+
+  @include media-mobile() {
+    padding-top: 30px;
+    padding-right: 4%;
+  }
 
   @include mobile-to-tablet {
     padding-top: 30px;

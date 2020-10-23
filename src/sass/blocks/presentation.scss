@@ -1,6 +1,15 @@
 .presentation {
   @include indent();
 
+  @include media-mobile() {
+    // outline: 3px dashed yellow;
+    // background-color: transparent;
+    // background-color: darkcyan;
+
+    @include flex();
+    justify-content: center;
+  }
+
   @include mobile-to-tablet {
     @include flex();
   }
@@ -13,11 +22,18 @@
   @include flex();
   flex-direction: column;
 
+  @include media-mobile() {
+    // outline: 3px dashed blue;
+    max-width: 90%;
+    margin-top: 40px;
+    align-items: center;
+  }
+
   @include mobile-to-tablet {
     // background-color: darkolivegreen;
-    margin-top: 25px;
-    margin-left: 16%;
-    max-width: 66%;
+    // margin-top: 25px;
+    // margin-left: 16%;
+    // max-width: 66%;
   }
 
   @include media-tablet() {
@@ -36,8 +52,14 @@
   padding: 0.2em 0;
   margin-bottom: 25px;
 
+  @include media-mobile() {
+    width: 80%;
+    font-size: 26px;
+    text-align: center;
+  }
+
   @include mobile-to-tablet {
-    max-width: 80%;
+    // max-width: 80%;
   }
 
   @include media-tablet() {
@@ -48,13 +70,23 @@
 .presentation .presentation__text {
   margin-bottom: 33px;
   padding-right: 10px;
+
+  @include media-mobile() {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
 .presentation__link {
+  @include media-mobile() {
+    width: 80%;
+    // max-width: 80%;
+  }
+
   @include mobile-to-tablet {
-    min-width: 45%;
-    max-width: 45%;
-    align-self: center;
+    // min-width: 45%;
+    // max-width: 45%;
+    // align-self: center;
   }
 
   @include media-custom(1200px) {

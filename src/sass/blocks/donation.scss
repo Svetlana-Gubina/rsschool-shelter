@@ -3,8 +3,9 @@
   align-items: center;
   padding-top: 5%;
 
+
   @include mobile-to-tablet {
-    padding-top: 75px;
+    // padding-top: 75px;
     justify-content: center;
   }
 
@@ -14,16 +15,29 @@
   }
 }
 
+.index .donation {
+  @include media-mobile() {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+}
+
 .donation__heading {
   text-align: center;
 
   @include indent();
   letter-spacing: 0.1em;
 
+  @include media-mobile() {
+    font-size: 25px;
+    max-width: 75%;
+    margin-bottom: 10px;
+  }
+
   @include mobile-to-tablet {
     text-align: left;
-    max-width: 75%;
-    margin-bottom: 5px;
+    // max-width: 75%;
+    // margin-bottom: 5px;
   }
 
   @include media-tablet() {
@@ -43,8 +57,12 @@
   align-items: center;
   margin-bottom: 45px;
 
+  @include media-mobile() {
+    margin-bottom: 20px;
+  }
+
   @include mobile-to-tablet {
-    max-width: 70%;
+    // max-width: 70%;
   }
 
   @include media-tablet() {
@@ -63,11 +81,15 @@
   flex-direction: column;
   align-items: center;
 
+  @include media-mobile() {
+    order: 1;
+  }
+
   @include mobile-to-tablet {
     order: 1;
-    margin-bottom: 60px;
-    align-items: flex-start;
-    max-width: 80%;
+    // margin-bottom: 60px;
+    // align-items: flex-start;
+    // max-width: 80%;
   }
 
   @include media-tablet() {
@@ -89,9 +111,16 @@
   margin-left: auto;
   margin-right: auto;
 
+  @include media-mobile() {
+    outline: 2px dashed black;
+    order: 2;
+    max-width: 90%;
+    // margin-bottom: 0;
+  }
+
   @include mobile-to-tablet {
     order: 2;
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
   }
 
   @include media-tablet() {
@@ -106,12 +135,21 @@
 }
 
 .donation__smaill-text {
+  // @include indent();
+  font-size: 16px;
   font-family: "Playfair Display Regular", serif;
   line-height: 1.1;
   letter-spacing: 0.1em;
   color: #545454;
   margin-left: 10px;
   margin-bottom: 20px;
+
+  @include media-mobile() {
+    @include indent();
+    padding: 0.7em 0;
+    margin-bottom: 15px;
+    letter-spacing: 0;
+  }
 }
 
 .donation__card-number {
@@ -145,6 +183,17 @@
   & svg {
     margin-right: 20px;
   }
+
+  @include media-mobile() {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-left: 0;
+    padding: 0.8em;
+
+    & svg {
+      margin-right: 10px;
+    }
+  }
 }
 
 .donation__text {
@@ -153,10 +202,17 @@
   color: #b2b2b2;
   text-align: center;
 
+  @include media-mobile() {
+    @include indent();
+    margin-bottom: 40px;
+    text-align-last: left;
+  }
+
+
   @include mobile-to-tablet {
-    text-align: left;
-    padding-right: 10px;
-    padding-left: 10px;
+    // text-align: left;
+    // padding-right: 10px;
+    // padding-left: 10px;
   }
 
   @include media-tablet() {

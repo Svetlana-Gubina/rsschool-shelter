@@ -5,18 +5,23 @@
 .container--top {
   background-color: #312925;
   min-height: 908px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  @include mobile-to-tablet {
-    min-height: 1170px;
-    background-image: url("../../assets/img/hero-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  @include media-mobile() {
+    min-height: 823px;
+    background-image: url("../../assets/img/hero-mobile.png"), url("../../assets/img/bg-gradient.jpg");
+    background-size: 84% 34%, cover;
+    background-position: 72% 101%, 0 0;
+  }
+
+  @include mobile-to-tablet() {
+    // min-height: 1170px;
+    // background-image: url("../../assets/img/hero-tablet.jpg");
   }
 
   @include media-tablet() {
     background-image: url("../../assets/img/hero.jpg");
-    background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover;
   }
 }

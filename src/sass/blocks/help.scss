@@ -3,9 +3,13 @@
   align-items: center;
   flex-direction: column;
 
+  @include media-mobile() {
+    padding-top: 35px;
+  }
+
   @include mobile-to-tablet {
-    @include indent();
-    padding-top: 75px;
+    // @include indent();
+    // padding-top: 75px;
   }
 
   @include media-tablet() {
@@ -20,9 +24,14 @@
   text-align: center;
   letter-spacing: 0.1em;
 
+  @include media-mobile() {
+    font-size: 25px;
+    max-width: 80%;
+  }
+
   @include mobile-to-tablet {
-    margin-bottom: 25px;
-    max-width: 50%;
+    // margin-bottom: 25px;
+    // max-width: 50%;
   }
 
   @include media-tablet() {
@@ -45,10 +54,18 @@
   align-items: center;
   padding-top: 30px;
 
+  @include media-mobile() {
+    padding-top: 15px;
+    padding-right: 10px;
+    // padding-left: 10px;
+    // outline: 3px dashed dodgerblue;
+    justify-content: space-between;
+  }
+
   @include mobile-to-tablet {
-    justify-content: flex-start;
-    padding-left: 50px;
-    margin-bottom: 55px;
+    // justify-content: flex-start;
+    // padding-left: 50px;
+    // margin-bottom: 55px;
   }
 
   @include media-tablet() {
@@ -57,7 +74,8 @@
   }
 
   @include media-desktop() {
-    justify-content: flex-start;
+
+
     padding-left: 45px;
     margin-bottom: 15px;
   }
@@ -69,6 +87,12 @@
   min-height: 113px;
   margin-right: 61px;
   margin-bottom: 25px;
+
+  @include media-mobile() {
+    @include indent();
+    flex-basis: 135px;
+    min-height: 118px;
+  }
 }
 
 
@@ -109,6 +133,10 @@
   & p {
     @include indent();
     padding: 1.4em 0;
+
+    @include media-mobile() {
+      padding: 0.7em 0;
+    }
   }
 
   &:hover,
@@ -120,8 +148,22 @@
   &:active {
     opacity: 0.8;
   }
+
+  @include media-mobile() {
+    font-size: 16px;
+    line-height: 1.4;
+
+    & svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
 .help__icon--collars {
   margin-bottom: 10px;
+
+  @include media-mobile() {
+    margin-bottom: 3px;
+  }
 }

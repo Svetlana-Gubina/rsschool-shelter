@@ -6,10 +6,15 @@
   width: 100%;
   max-width: 100%;
 
+  @include media-mobile() {
+    // background-color: lightpink;
+    padding-top: 40px;
+  }
+
   @include media-tablet() {
-    @include indent();
-    padding-top: 6%;
-    padding-bottom: 6%;
+    // @include indent();
+    // padding-top: 6%;
+    // padding-bottom: 6%;
   }
 }
 
@@ -19,6 +24,15 @@
   margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.1em;
+
+  @include media-mobile() {
+    margin-bottom: 35px;
+  }
+
+  @include media-mobile() {
+    font-size: 25px;
+    // margin-bottom: 50px;
+  }
 }
 
 .friends__flex {
@@ -31,8 +45,8 @@
   max-width: 100%;
 
   @include mobile-to-tablet {
-    @include indent();
-    padding-top: 50px;
+    // @include indent();
+    // padding-top: 50px;
   }
 
   // @include media-tablet() {
@@ -43,9 +57,14 @@
   min-width: 20%;
   margin-bottom: 20px;
 
+  @include media-mobile() {
+    width: 85%;
+    margin-bottom: 35px;
+  }
+
   @include mobile-to-tablet {
-    min-width: 35%;
-    margin-bottom: 80px;
+    // min-width: 35%;
+    // margin-bottom: 80px;
   }
 
   @include media-tablet() {
