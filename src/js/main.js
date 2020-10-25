@@ -1,7 +1,7 @@
 "use strict";
 (function () {
   const BREAKPOINTS = {
-    tablet: "600px",
+    tablet: "768px",
   };
 
   const toggle = document.querySelector(".main-nav__toggle");

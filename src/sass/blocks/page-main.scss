@@ -11,8 +11,13 @@
   padding-top: 128px;
   background-color: #f6f6f6;
 
+  @include mobile-to-tablet() {
+    // background-color: deepskyblue;
+    padding-top: 128px;
+  }
+
   @include media-custom(600px) {
-    padding-top: 400px;
+    // padding-top: 400px;
   }
 
   @include media-tablet() {
@@ -25,9 +30,18 @@
   padding-top: 10%;
   padding-bottom: 1.5%;
 
+  @include media-mobile() {
+    padding-top: 10.5%;
+  }
+
+  @include mobile-to-tablet() {
+    // background-color: deepskyblue;
+    // padding-top: 4%;
+  }
+
   @include media-tablet() {
-    padding: 2.4%;
-    padding-bottom: 4%;
+    // padding: 2.4%;
+    // padding-bottom: 4%;
   }
 
   @include media-desktop() {

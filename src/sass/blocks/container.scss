@@ -3,24 +3,31 @@
 }
 
 .container--top {
+  @include indent();
   background-color: #312925;
-  min-height: 908px;
   background-repeat: no-repeat;
-  background-size: cover;
-
-  @include media-mobile() {
-    min-height: 823px;
-    background-image: url("../../assets/img/hero-mobile.png"), url("../../assets/img/bg-gradient.jpg");
-    background-size: 84% 34%, cover;
-    background-position: 72% 101%, 0 0;
-  }
+  min-height: 823px;
+  background-image: url("../../assets/img/hero-mobile.png"), url("../../assets/imgbg-gradient.jpg");
+  background-size: 84% 34%, cover;
+  background-position: 72% 101%, 0 0;
 
   @include mobile-to-tablet() {
-    // min-height: 1170px;
-    // background-image: url("../../assets/img/hero-tablet.jpg");
+    background-size: 74% 40%, cover;
+  }
+
+  @include media-custom(600px) {
+    min-height: 908px;
+    background-size: 60% 34%, cover;
   }
 
   @include media-tablet() {
+    min-height: 1170px;
+    background-image: url("../../assets/img/hero-tablet.jpg");
+    background-size: cover;
+  }
+
+  @include media-custom(900px) {
+    min-height: 908px;
     background-image: url("../../assets/img/hero.jpg");
     background-position: 50% 0;
   }

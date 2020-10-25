@@ -4,62 +4,43 @@
   min-width: $mobile-width;
 
   @include indent();
-  padding: 9.375% 3.125%;
-
   @include flex();
   justify-content: space-between;
-
-  @include media-mobile() {
-    // background-color: red;
-    padding: 1%;
-  }
-
-  @include mobile-to-tablet {
-    padding: 1%;
-  }
+  padding: 1%;
 
   @include media-tablet() {
     padding: 2.4% 3%;
-    padding-right: 2%;
   }
 }
 
 .page-header--index {
-  padding-top: 60px;
-
-  @include media-mobile() {
+  @include media-tablet() {
     padding-top: 30px;
-    padding-right: 4%;
   }
 
-  @include mobile-to-tablet {
-    padding-top: 30px;
+  @include media-desktop() {
+    padding-top: 60px;
   }
 }
 
-.page-header--inner {
+
+.inner .page-header--inner {
   @include indent();
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #ffffff;
-
-  @include media-tablet() {
-    @include indent();
-    justify-content: center;
-  }
 }
 
 .page-header--inner .wrapper {
   @include indent();
-  padding: 9.375% 3.125%;
-
   @include flex();
   justify-content: space-between;
 
-  @include media-tablet() {
-    padding: 1.8% 2.3%;
-    padding-right: 2%;
+  @include media-desktop() {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.8%;
   }
 }

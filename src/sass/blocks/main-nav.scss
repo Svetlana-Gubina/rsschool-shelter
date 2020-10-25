@@ -1,16 +1,16 @@
 .main-nav {
   @include indent();
-  width: 100%;
-  max-width: 100%;
+  margin-right: 320px;
+  width: 320px;
 
   @include media-tablet() {
-    max-width: 38%;
+    width: 63%;
+    margin-right: 0;
     margin-top: 8px;
   }
 
-  @include mobile-to-tablet {
-    margin-top: 10px;
-    max-width: 65%;
+  @include media-desktop() {
+    width: 38%;
   }
 }
 
@@ -19,15 +19,7 @@
   @include indent();
   @include flex();
   flex-direction: column;
-
   padding-top: 20px;
-
-  @include mobile-to-tablet {
-    flex-direction: row;
-    justify-content: space-between;
-
-    @include indent();
-  }
 
   @include media-tablet() {
     flex-direction: row;
@@ -102,10 +94,6 @@
   margin: 10px;
   margin-right: 40px;
   margin-top: 20px;
-
-  @include media-mobile() {
-    outline: 2px dashed black;
-  }
 }
 
 .main-nav__toggle--index {
