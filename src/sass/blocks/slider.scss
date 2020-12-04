@@ -1,23 +1,18 @@
 .slider {
   @include indent();
-  margin-bottom: 60px;
 
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-
-  @include media-mobile() {
-    // outline: 3px dashed black;
-    margin-bottom: 110px;
-  }
-
-  @include mobile-to-tablet {
-    // max-width: 90%;
-  }
+  margin-bottom: 110px;
 
   @include media-tablet() {
-    // margin-bottom: 60px;
-    max-width: 77.34%;
+    max-width: 80%;
+    margin-bottom: 60px;
+  }
+
+  @include media-custom(900px) {
+    max-width: 80%;
   }
 }
 
@@ -26,13 +21,13 @@
   min-width: 990px;
   justify-content: space-between;
 
-  @include mobile-to-tablet {
+  @include media-tablet() {
+    padding-left: 0;
     justify-content: flex-start;
   }
 
-  @include media-tablet() {
-    min-width: 990px;
-    padding-left: 0;
+  @include media-custom(1200px) {
+    padding-right: 20px;
     justify-content: space-between;
   }
 }
@@ -40,11 +35,11 @@
 .slider__item {
   @include catalog-item();
 
-  @include mobile-to-tablet {
+  @include media-tablet() {
     margin-right: 35px;
   }
 
-  @include media-tablet() {
+  @include media-custom(1200px) {
     margin-right: 0;
   }
 }
@@ -72,10 +67,6 @@
   &:active {
     opacity: 0.8;
   }
-
-  @include mobile-to-tablet {
-    // width: 80%;
-  }
 }
 
 
@@ -90,6 +81,11 @@
 
 .slider__img {
   @include catalog-img();
+  margin-bottom: 5px;
+
+  @include media-tablet() {
+    margin-bottom: 0;
+  }
 }
 
 .slider__name {
@@ -122,15 +118,11 @@
   }
 
   @include media-mobile() {
-    top: 77.5%;
-  }
-
-  @include mobile-to-tablet {
-    // top: 51.6%;
+    top: 77%;
   }
 
   @include media-tablet() {
-    top: 48%;
+    top: 47.5%;
   }
 }
 
@@ -138,11 +130,7 @@
   left: 0;
 
   @include media-mobile() {
-    left: 20%;
-  }
-
-  @include mobile-to-tablet {
-    // left: 2%;
+    left: 15%;
   }
 
   @include media-tablet() {
@@ -154,15 +142,11 @@
   right: 0;
 
   @include media-mobile() {
-    right: 20%;
-  }
-
-  @include mobile-to-tablet {
-    // right: 3%;
+    right: 25%;
   }
 
   @include media-tablet() {
-    right: 3%;
+    right: 4%;
   }
 }
 
